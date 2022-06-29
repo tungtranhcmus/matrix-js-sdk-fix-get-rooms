@@ -679,7 +679,7 @@ export function lexicographicCompare(a: string, b: string): number {
     return (a < b) ? -1 : ((a === b) ? 0 : 1);
 }
 
-const collator = new Intl.Collator();
+const collator =  require("intl-collator")
 /**
  * Performant language-sensitive string comparison
  * @param a the first string to compare
